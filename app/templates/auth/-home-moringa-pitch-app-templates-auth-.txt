@@ -1,0 +1,1 @@
+/home/moringa/pitch/app/templates/auth/reset_password.html
