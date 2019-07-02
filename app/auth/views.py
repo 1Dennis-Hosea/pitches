@@ -1,6 +1,6 @@
 from flask import render_template, redirect, url_for, flash, request
 from ..models import User
-from ..email import send_email, send_reset_email
+from app.email import send_email, send_reset_email
 from . import auth
 from flask_login import login_user, login_required, logout_user, current_user
 from .. import db
@@ -76,4 +76,4 @@ def new_password(token):
         db.session.commit()
         flash('Your password has been reset')
         return redirect(url_for('auth.login'))
-    return render_template('auth/change_password.html',title='Reset Password
+    return render_template('auth/change_password.html',title='Reset Password')

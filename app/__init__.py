@@ -23,7 +23,7 @@ def create_app(config_name):
 
     # app configurations
     app.config.from_object(config_options[config_name])
-    config_options[config_name].init_app(app)
+    #config_options[config_name].__init__app(app)
 
     # initializing flask extensions
     bootstrap.init_app(app)
@@ -41,3 +41,5 @@ def create_app(config_name):
     app.register_blueprint(auth_blueprint,url_prefix = '/auth')
 
     configure_uploads(app,photos)
+
+    return app

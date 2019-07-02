@@ -153,4 +153,4 @@ def update_pic(uname):
         user.profile_pic_path = path
         # user_photo = PhotoProfile(pic_path = path,user = user)
         db.session.commit()
-    return redirect(url_for('main.profile',uname=uname,id_user=current_user.
+    return redirect(url_for('main.profile',uname=uname,id_user=current_user))
