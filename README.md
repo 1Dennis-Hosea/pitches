@@ -35,7 +35,7 @@ Running the app in development
 In the same terminal type: python3 manage.py server
 
 
-##Technologies used
+Technologies used
 - Python 3.6
 - HTML
 - Bootstrap 4

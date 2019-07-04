@@ -4,13 +4,9 @@ class Config:
     '''
     General configuration parent class
     '''
+    UPLOADED_PHOTOS_DEST ='app/static/photos'
 
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    UPLOADS_DEFAULT_DEST = "app/static"
-    @staticmethod
-    def init_app(app):
-        pass
-
 
 
 class ProdConfig(Config):
