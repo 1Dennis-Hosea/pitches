@@ -14,3 +14,12 @@
 {{ simplemde.css }}
 {{ simplemde.js }}
 {% endblock %}
+
+{% block navbar%}
+    {% include 'navbar.html' %}
+{% endblock %}
+
+{% block scripts %}
+{{super()}}
+<script src="{{url_for('static',filename='js/script.js')}}"></script>
+{% endblock %}
